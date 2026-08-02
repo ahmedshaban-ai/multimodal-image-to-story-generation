@@ -105,6 +105,48 @@ images/
 - Automatic Story Scoring
 
 ---
+## Quick Start
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ahmedshaban-ai/multimodal-image-to-story-generation.git
+cd multimodal-image-to-story-generation
+```
+
+Create a virtual environment and install the requirements:
+
+```bash
+python -m venv .venv
+```
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+Linux or macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the semantic retrieval demonstration:
+
+```bash
+python src/retrieval_demo.py
+```
+
+## Reproducibility Note
+
+This public repository contains a lightweight and reproducible demonstration of the research pipeline. The complete 100,000-image dataset and large model files are not included because of storage, licensing, privacy, and research-management considerations.
 
 ## Contact
 
