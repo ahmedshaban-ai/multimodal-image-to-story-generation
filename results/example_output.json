@@ -1,17 +1,59 @@
 {
   "sample_id": "sample_001",
   "input_type": "single_image",
-  "scene_description": "A family is sitting together around a dining table.",
+  "image_name": "sample_001.jpg",
+  "dataset": "Arabic Image-to-Story Dataset",
+  "scene_category": "children_school_life",
+  "emotion": "happy",
+
+  "image_description": "Several children are playing together outdoors during a school activity. One girl is throwing a flying disc while the other children are laughing and interacting on the grass.",
+
   "retrieved_contexts": [
-    "A family gathers during the evening to share a meal.",
-    "Parents and children enjoy a quiet moment together at home."
+    "Children enjoy participating in outdoor school activities together.",
+    "Group games encourage cooperation, communication, and friendship.",
+    "Playing together helps children build teamwork and social skills."
   ],
-  "model": "Qwen2.5-3B-Instruct",
-  "generation_settings": {
-    "temperature": 0.7,
-    "max_new_tokens": 500,
-    "top_k_retrieval": 5
+
+  "prompt_summary": "Generate an educational Arabic story suitable for children based on the visual scene while emphasizing cooperation, sharing, and positive social values.",
+
+  "model": {
+    "name": "Qwen2.5-3B-Instruct",
+    "framework": "Transformers",
+    "retrieval": "FAISS",
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
   },
-  "generated_story_ar": "ضع هنا قصة عربية حقيقية أنتجها نظامك.",
-  "status": "research_demo"
+
+  "generation_parameters": {
+    "temperature": 0.7,
+    "top_k_retrieval": 5,
+    "max_new_tokens": 500
+  },
+
+  "generated_output": {
+    "title": "حصة اللعب الجماعي",
+    "story": "كان يومًا حارًا، وكانت حصة اللعب الجماعية في المدرسة تنتظر الجميع. وفي أحد الأيام، وجد الصبي أحمد فريسة جديدة، وهي فراشة صغيرة جميلة. قرر أحمد أن يلعب معها، لكنه لم يكن مستعدًا تمامًا لمشاركة الفراشة مع أصدقائه الآخرين. بينما كان يحاول اصطحاب الفراشة معه، بدأ الأطفال الآخرون في الاستعداد للاستمتاع ببعضهم البعض. بدأوا في ترتيب الألعاب وتبادل الأدوات، وكانوا يضحكون وينادون بعضهم البعض لمشاركتهم. بينما كان أحمد يحاول إقناع الفراشة بالبقاء معه، لم يتوقف الأطفال الآخرون عن الالتحاق ببعضهم البعض في ألعابهم. في النهاية، أدرك أحمد أن الفراشة كانت ترغب في أن تشارك مع الجميع، وأنه يمكنه أن يلعب معها في وقت لاحق. فقرر أن يترك الفراشة تلعب مع أصدقائها، وأن يعود لاستكشاف المزيد من الأصدقاء في الحصة الجماعية.",
+
+    "moral": "يتعلم الأطفال أن المشاركة والتعاون مهمان في الحياة، وأننا يجب أن نقدر الأصدقاء الذين يحبوننا ويرغبون في أن نشاركهم في أوقاتنا. كما يعلمنا أن الصبر والتفاهم مهمان في حل المشاكل والوصول إلى الحلول المرضية."
+  },
+
+  "evaluation": {
+    "automatic_metrics": {
+      "BLEU": null,
+      "ROUGE-L": null,
+      "METEOR": null,
+      "BERTScore": null,
+      "CIDEr": null
+    },
+
+    "human_evaluation": {
+      "coherence": null,
+      "relevance": null,
+      "fluency": null,
+      "overall": null
+    }
+  },
+
+  "status": "research_demo",
+  "language": "Arabic",
+  "license": "Example output for research demonstration only."
 }
