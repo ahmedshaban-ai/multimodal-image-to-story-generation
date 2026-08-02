@@ -62,6 +62,25 @@ Qwen2.5 Generation
 Story Evaluation
 
 ---
+## System Architecture
+
+The current research pipeline combines visual understanding, semantic retrieval, context-aware prompt construction, and language-model generation.
+
+![System Architecture](images/architecture.png)
+
+## Example Output
+
+A lightweight research example is available in:
+
+[`results/example_output.json`](results/example_output.json)
+
+## Dataset Sample
+
+The complete research dataset contains 100,000 images. A small metadata sample is available for demonstrating the data format:
+
+[`data/sample_records.json`](data/sample_records.json)
+
+The complete dataset is not distributed through this repository because of storage and licensing considerations.
 
 ## Current Status
 
