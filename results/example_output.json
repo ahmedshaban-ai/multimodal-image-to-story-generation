@@ -1,0 +1,17 @@
+{
+  "sample_id": "sample_001",
+  "input_type": "single_image",
+  "scene_description": "A family is sitting together around a dining table.",
+  "retrieved_contexts": [
+    "A family gathers during the evening to share a meal.",
+    "Parents and children enjoy a quiet moment together at home."
+  ],
+  "model": "Qwen2.5-3B-Instruct",
+  "generation_settings": {
+    "temperature": 0.7,
+    "max_new_tokens": 500,
+    "top_k_retrieval": 5
+  },
+  "generated_story_ar": "ضع هنا قصة عربية حقيقية أنتجها نظامك.",
+  "status": "research_demo"
+}
